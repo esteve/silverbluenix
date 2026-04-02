@@ -1,0 +1,30 @@
+modules:
+  - type: dnf
+    repos:
+      files:
+        - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+    install:
+      packages:
+        - bees
+        - brave-browser
+        - default-editor
+        - duperemove
+        - fdupes
+        - fish
+        - git-filter-repo
+        - gnome-boxes
+        - image-builder
+        - jdupes
+        - keyd
+        - libvirt-devel
+        - pipx
+        - quickemu
+        - rEFInd
+        - sbsigntools
+        - terra-release
+        - vagrant
+        - vim-default-editor
+    remove:
+      packages:
+        - nano-default-editor

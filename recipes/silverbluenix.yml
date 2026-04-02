@@ -1,0 +1,12 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+name: silverbluenix
+description: Silverblue + Nix
+
+base-image: ghcr.io/ublue-os/silverblue-main
+image-version: latest
+
+modules:
+  - from-file: common-nix.yml
+
+  - type: signing

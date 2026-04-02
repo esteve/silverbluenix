@@ -1,0 +1,23 @@
+modules:
+  - type: files
+    files:
+      - source: system/usr/lib/systemd/system/nix-daemon.service.d/override.conf
+        destination: /usr/lib/systemd/system/nix-daemon.service.d/override.conf
+      - source: system/usr/lib/systemd/system/nix.mount
+        destination: /usr/lib/systemd/system/nix.mount
+
+  - type: dnf
+    install:
+      packages:
+        - nix
+
+  - type: script
+    snippets:
+      - "rm -rf /nix"
+      - "mkdir -p /nix"
+
+  - type: systemd
+    system:
+      enabled:
+        - nix.mount
+        - nix-daemon.service
