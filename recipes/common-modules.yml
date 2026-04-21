@@ -4,6 +4,7 @@ modules:
       files:
         - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
         - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+        - https://pkgs.tailscale.com/stable/fedora/39/tailscale.repo
     install:
       packages:
         - bees
@@ -22,6 +23,8 @@ modules:
         - quickemu
         - rEFInd
         - sbsigntools
+        - starship
+        - tailscale
         - terra-release
         - vagrant
         - vim-default-editor
