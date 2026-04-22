@@ -31,3 +31,8 @@ modules:
     remove:
       packages:
         - nano-default-editor
+
+  - type: systemd
+    system:
+      enabled:
+        - tailscaled.service
