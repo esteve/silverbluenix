@@ -13,6 +13,7 @@ modules:
 
   - type: script
     snippets:
+      - "echo L+ /run/opengl-driver - - - - $(nix path-info --json nixpkgs#mesa 2> /dev/null| jq -r 'keys[0]') > /usr/lib/tmpfiles.d/nix-opengl-driver.conf"
       - "rm -rf /nix"
       - "mkdir -p /nix"
 
