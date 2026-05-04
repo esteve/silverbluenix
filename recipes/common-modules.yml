@@ -25,9 +25,9 @@ modules:
         - quickemu
         - rEFInd
         - sbsigntools
-        - starship
+        # - starship
         - tailscale
-        - terra-release
+        # - terra-release
         - vagrant
         - vim-default-editor
     remove:
