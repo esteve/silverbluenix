@@ -3,8 +3,10 @@ modules:
     repos:
       files:
         - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
-        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+        # - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
         - https://pkgs.tailscale.com/stable/fedora/39/tailscale.repo
+      copr:
+        - alternateved/keyd
     install:
       packages:
         - bees
