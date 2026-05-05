@@ -10,12 +10,12 @@ modules:
     install:
       packages:
         - bees
-        - brave-browser
+        # - brave-browser
         - default-editor
         - duperemove
         - fdupes
         - fish
-        - git-filter-repo
+        # - git-filter-repo
         - gnome-boxes
         - image-builder
         - jdupes
