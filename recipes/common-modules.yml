@@ -17,6 +17,7 @@ modules:
         - fish
         # - git-filter-repo
         - gnome-boxes
+        - gnome-tweaks
         - image-builder
         - jdupes
         - keyd
