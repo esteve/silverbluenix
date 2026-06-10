@@ -13,6 +13,7 @@ modules:
         # - brave-browser
         - default-editor
         - duperemove
+        - et
         - fdupes
         - fish
         # - git-filter-repo
