@@ -40,3 +40,14 @@ modules:
     system:
       enabled:
         - tailscaled.service
+
+  - type: files
+    files:
+      - source: bitwarden-polkit
+        destination: /
+
+  - type: script
+    snippets:
+      - |
+        chmod 0644 /usr/share/polkit-1/actions/com.bitwarden.Bitwarden.policy
+        chown root:root /usr/share/polkit-1/actions/com.bitwarden.Bitwarden.policy
