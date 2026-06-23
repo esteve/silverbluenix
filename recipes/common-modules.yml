@@ -17,6 +17,7 @@ modules:
         - fdupes
         - fish
         # - git-filter-repo
+        - gcc-c++
         - gnome-boxes
         - gnome-tweaks
         - image-builder
