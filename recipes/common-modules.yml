@@ -24,6 +24,7 @@ modules:
         - jdupes
         - keyd
         - libvirt-devel
+        - nautilus-gsconnect
         - pipx
         - quickemu
         - rEFInd
