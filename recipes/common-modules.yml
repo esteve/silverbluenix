@@ -19,13 +19,12 @@ modules:
         # - git-filter-repo
         - gcc-c++
         - gnome-boxes
-        - gnome-shell-extension-gsconnect
         - gnome-tweaks
         - image-builder
         - jdupes
         - keyd
         - libvirt-devel
-        - nautilus-gsconnect
+        - nautilus-python
         - pipx
         - quickemu
         - rEFInd
