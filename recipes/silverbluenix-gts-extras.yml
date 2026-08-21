@@ -3,7 +3,7 @@
 name: silverbluenix-gts-extras
 description: Silverblue (GTS) + Nix + Extras
 
-base-image: ghcr.io/esteve/silverbluenix-gts
+base-image: quay.io/esteve/silverbluenix-gts
 image-version: latest
 
 modules:

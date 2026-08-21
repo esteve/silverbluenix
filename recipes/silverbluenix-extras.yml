@@ -3,7 +3,7 @@
 name: silverbluenix-extras
 description: Silverblue + Nix + Extras
 
-base-image: ghcr.io/esteve/silverbluenix
+base-image: quay.io/esteve/silverbluenix
 image-version: latest
 
 modules:
