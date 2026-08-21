@@ -47,6 +47,8 @@ jobs:
         uses: https://github.com/blue-build/github-action@v1.12
         with:
           recipe: ${{ matrix.recipe }}
+          # Codeberg's job token cannot authenticate to GitHub's tags API.
+          cli_version: latest
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
           registry: quay.io
           registry_username: ${{ secrets.QUAY_USERNAME }}
@@ -77,6 +79,8 @@ jobs:
         uses: https://github.com/blue-build/github-action@v1.12
         with:
           recipe: ${{ matrix.recipe }}
+          # Codeberg's job token cannot authenticate to GitHub's tags API.
+          cli_version: latest
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
           registry: quay.io
           registry_username: ${{ secrets.QUAY_USERNAME }}
