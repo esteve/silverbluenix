@@ -48,7 +48,9 @@ jobs:
         with:
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
-          registry_token: ${{ github.token }}
+          registry: quay.io
+          registry_username: ${{ secrets.QUAY_USERNAME }}
+          registry_token: ${{ secrets.QUAY_PASSWORD }}
           pr_event_number: ${{ github.event.number }}
 
           # enabled by default, disable if your image is small and you want faster builds
