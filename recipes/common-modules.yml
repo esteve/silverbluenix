@@ -6,7 +6,7 @@ modules:
         # - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
         - https://pkgs.tailscale.com/stable/fedora/39/tailscale.repo
       copr:
-        - alternateved/keyd
+        - repository: alternateved/keyd
     install:
       packages:
         - bees
